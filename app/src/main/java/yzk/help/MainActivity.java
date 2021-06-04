@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         adapter.setList(VideoBean.getVideoList());
 
         RecyclerView rv = findViewById(R.id.test_rv);
-        rv.setLayoutManager(new LinearLayoutManager(this));
+        rv.setLayoutManager(new PagerLayoutManager(this));
         rv.setAdapter(adapter);
     }
 }
